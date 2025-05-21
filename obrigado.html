@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado - Lucas Nivagara</title>
+    <meta name="description" content="Obrigado por entrar em contato - Lucas Nivagara">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, #1e293b, #334155);
+        }
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex h-16 items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <img src="favicon.ico" alt="Logo N" width="48" height="48">
+                        <span class="text-2xl font-bold text-blue-600">Lucas Nivagara</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Thank You Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 md:px-6 max-w-3xl">
+            <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-500 mx-auto mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h1 class="text-3xl font-bold text-gray-900 mb-4">Obrigado pela sua mensagem!</h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Recebi sua mensagem e entrarei em contato o mais breve possível.
+                </p>
+                <a href="index.html" class="btn-primary inline-block">
+                    Voltar para a página inicial
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 md:px-6 text-center">
+            <p>&copy; <span id="current-year"></span> Lucas Nivagara. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
